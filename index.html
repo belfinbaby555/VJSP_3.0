@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="group-available" id="group-available">
+        <div class="black-back">
+            <div class="available">
+                <h4 style="margin: 10px;">Choose Group To Join</h4>
+                <div class="line3"></div>
+                <div class="all-groups">
+                    <div class="public-group-info" style="margin-top: 5%;">
+                        <img src="2.png" class="group-profile">
+                        <input type="checkbox" class="checkbox">
+                        <div class="group-name">Front End Group</div>
+                        <div class="group-bio">only good messages</div>
+                    </div>
+                    <div class="public-group-info" style="margin-top: 5%;">
+                        <img src="6.png" class="group-profile">
+                        <input type="checkbox" class="checkbox">
+                        <div class="group-name">Front End Group</div>
+                        <div class="group-bio">only good messages</div>
+                    </div>
+                    <div class="public-group-info" style="margin-top: 5%;">
+                        <img src="7.png" class="group-profile">
+                        <input type="checkbox" class="checkbox">
+                        <div class="group-name">Front End Group</div>
+                        <div class="group-bio">only good messages</div>
+                    </div>
+                    <div class="public-group-info" style="margin-top: 5%;">
+                        <img src="2.png" class="group-profile">
+                        <input type="checkbox" class="checkbox">
+                        <div class="group-name">Front End Group</div>
+                        <div class="group-bio">only good messages</div>
+                    </div>
+                    <div class="public-group-info" style="margin-top: 5%;">
+                        <img src="6.png" class="group-profile">
+                        <input type="checkbox" class="checkbox">
+                        <div class="group-name">Front End Group</div>
+                        <div class="group-bio">only good messages</div>
+                    </div>
+                </div>
+                <button class="cancel" onclick="cancel()">Cancel</button>
+                <button class="join-group" onclick="joingroup()">Join Group</button>
+            </div>
+        </div>
+        </div>
+<div id="full" >
+<div class="header">
+<img src="1.png" class="img2">
+<h5 id="chat" onclick="chat()">Chats</h5><h5 id="people" onclick="people()">People</h5>
+<dic>
+    <button class="button3"><img src="4.png" style="width: 17%;margin: 5px 0px -8px 0px;">     Create new group</button>
+<button class="profile"><img src="6.png" alt="" style="width: 65px;"></button>
+</dic>
+
+</div>
+<section class="float-line2" id="float-line2"></section>
+<div class="group-type">
+<input type="search" class="search" placeholder="&#xF002; Search"  />
+<h4><b>Groups</b></h4>
+<div class="pink-box">
+    <span><a id="public" onclick="public()"><b>Public</b></a><a id="private" onclick="private()"><b>Private</b></a></span>
+    <section class="float-line" id="float-line"></section>
+    <div class="line1"></div>
+    <div class="groups"id="public-nogroup">
+        <h3>You have not joined any <br> group</h3>
+        <button class="button1" onclick="groups()">See available groups!</button>
+    </div>
+    <div class="groups" id="private-joingroup">
+        <form class="column">
+            <input type="text" class="invitation" required placeholder="  Enter invitation link to join!">
+            <input type="submit" class="submit" value="Join Group">
+        </form>
+    </div>
+    <div class="groups" id="private-nogroups">
+        <h3>Not a member of any <br> groups</h3>
+        <button class="button2" onclick="join()">Join Group</button>
+    </div>
+    <div class="groups" id="public-groups">
+        <div class="group-info">
+            <img src="2.png" class="group-profile">
+            <div class="group-name">Front End Group</div>
+            <div class="group-bio">only good messages</div>
+        </div>
+        <div class="group-info">
+            <img src="7.png" class="group-profile">
+            <div class="group-name">Front End Group</div>
+            <div class="group-bio">only good messages</div>
+        </div>
+        <div class="group-info">
+            <img src="6.png" class="group-profile">
+            <div class="group-name">Front End Group</div>
+            <div class="group-bio">only good messages</div>
+        </div>
+
+        <button class="add" onclick="groups()">+</button>
+    </div>
+</div>
+
+</div>
+<div class="chats" id="chats">
+<h1>Vimal Jyothi Students Portal</h1>
+<span><div class="line2"></div><h2>Connect, Collaborate, Communicate</h2><div class="line2"></div></span>
+<img src="5.png" class="img1">
+</div>
+
+<div class="chats" id="people-online">
+<div class="blue-box">
+    <h6>People Online</h6>
+    <h7>No active people</h7><br><br>
+    <h8>You'll see when others are <br>active here.</h8><br>
+    <img src="3.png" style="margin-top: 5%;">
+</div>
+</div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
