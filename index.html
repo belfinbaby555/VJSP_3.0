@@ -63,7 +63,7 @@
 <input type="search" class="search" placeholder="&#xF002; Search"  />
 <h4><b>Groups</b></h4>
 <div class="pink-box">
-    <span><a id="public" onclick="public()"><b>Public</b></a><a id="private" onclick="private()"><b>Private</b></a></span>
+    <span class="row"><a id="public" onclick="public()"><b>Public</b></a><a id="private" onclick="private()"><b>Private</b></a></span>
     <section class="float-line" id="float-line"></section>
     <div class="line1"></div>
     <div class="groups"id="public-nogroup">
@@ -81,34 +81,53 @@
         <button class="button2" onclick="join()">Join Group</button>
     </div>
     <div class="groups" id="public-groups">
-        <div class="group-info">
+        <div class="group-info" id="group-info">
             <img src="2.png" class="group-profile">
             <div class="group-name">Front End Group</div>
-            <div class="group-bio">only good messages</div>
+            <div class="group-bio" id="group-bio">only good messages</div>
         </div>
-        <div class="group-info">
+        <div class="group-info" id="group-info">
+            <img src="5.png" class="group-profile">
+            <div class="group-name">Front End Group</div>
+            <div class="group-bio" id="group-bio">only good messages</div>
+        </div>
+        <div class="group-info" id="group-info">
             <img src="7.png" class="group-profile">
             <div class="group-name">Front End Group</div>
-            <div class="group-bio">only good messages</div>
-        </div>
-        <div class="group-info">
-            <img src="6.png" class="group-profile">
-            <div class="group-name">Front End Group</div>
-            <div class="group-bio">only good messages</div>
+            <div class="group-bio" id="group-bio">only good messages</div>
         </div>
 
         <button class="add" onclick="groups()">+</button>
+    </div>
+    <div class="groups" id="private-groups">
+        <div class="group-info" id="group-info">
+            <img src="2.png" class="group-profile">
+            <div class="group-name">Front End Group</div>
+            <div class="group-bio" id="group-bio">only good messages</div>
+        </div>
+        <div class="group-info" id="group-info">
+            <img src="2.png" class="group-profile">
+            <div class="group-name">Front End Group</div>
+            <div class="group-bio" id="group-bio">only good messages</div>
+        </div>
+        <div class="group-info" id="group-info">
+            <img src="2.png" class="group-profile">
+            <div class="group-name">Front End Group</div>
+            <div class="group-bio" id="group-bio">only good messages</div>
+        </div>
+
+        <button class="add" onclick="join()">+</button>
     </div>
 </div>
 
 </div>
 <div class="chats" id="chats">
 <h1>Vimal Jyothi Students Portal</h1>
-<span><div class="line2"></div><h2>Connect, Collaborate, Communicate</h2><div class="line2"></div></span>
+<span class="row"><div class="line2"></div><h2>Connect, Collaborate, Communicate</h2><div class="line2"></div></span>
 <img src="5.png" class="img1">
 </div>
 
-<div class="chats" id="people-online">
+<div class="chats" id="people-online-none">
 <div class="blue-box">
     <h6>People Online</h6>
     <h7>No active people</h7><br><br>
@@ -116,6 +135,41 @@
     <img src="3.png" style="margin-top: 5%;">
 </div>
 </div>
+<div class="chats" id="group-chats">
+    <img src="2.png" style="width: 80px; height: 80px;">
+    <div class="messages">
+    <div class="public-message">
+        <img src="7.png"class="user-profile">
+        <div class="chat-message">
+            <section class="public-user-name">You</section>
+            <div class="column">
+                <section class="public-user-message" style="background-color:rgba(2, 57, 255, 0.705) ;color: white;">
+                    hello sw4thwrw bwrtf hwrterg 
+                </section>
+                <span class="time">4:30pm</span>
+            </div>
+        </div>
+    </div>
+    <div class="public-message">
+        <img src="7.png"class="user-profile">
+        <div class="chat-message">
+            <section class="public-user-name">You</section>
+            <div class="column">
+                <section class="public-user-message" >
+                    hello ghjfhdty yj dhndtyj yjhdyusryj y ryjfghjdty shsrthw tsfw4thwrt w4thwrw bwrtf hwrterg 
+                </section>
+                <span class="time">4:30pm</span>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <span class="send-msg"><button class="attach"><i class="fa fa-paperclip"></i></button>
+   <form class="form">
+    <input type="text" class="type-message" placeholder="Type Message..." required>
+    <input type="submit"class="send" value="send &#xf1d9;">
+   </form>
+</span>
 </div>
 
 <script src="main.js"></script>
